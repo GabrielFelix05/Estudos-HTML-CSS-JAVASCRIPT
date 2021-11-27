@@ -16,6 +16,8 @@
             box-sizing: border-box;
         }
         #container {
+            position: relative;
+            height: 250px;
             margin: 30px;
             border: 1px solid red;
             padding: 30px;
@@ -23,10 +25,29 @@
         #container h1 {
             color: green;
         }
+        .absolute {
+            border: 1px dashed green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #container2 {
+            position: relative;
+            margin: 30px;
+            border: 1px solid red;
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
     <div id="container">
+        <div class="absolute">
+            <h1>Lorem</h1>
+            <p><span>Lorem ipsum dolor sit amet consectetur</span>, adipisicing elit. Repudiandae itaque quod aut quia quae, labore inventore veniam modi dicta? Nesciunt placeat in quod beatae. Et, possimus quae. Ad, voluptatem vitae.</p>
+        </div>
+    </div>
+
+    <div id="container2">
         <h1>Lorem</h1>
         <p><span>Lorem ipsum dolor sit amet consectetur</span>, adipisicing elit. Repudiandae itaque quod aut quia quae, labore inventore veniam modi dicta? Nesciunt placeat in quod beatae. Et, possimus quae. Ad, voluptatem vitae.</p>
     </div>
