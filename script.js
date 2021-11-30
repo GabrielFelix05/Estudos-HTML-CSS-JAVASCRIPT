@@ -1,8 +1,4 @@
-const array = [
-    'banana',
-    'limão',
-    'morango',
-    'maçã'
-]
+const array = []
 
-alert(array[3])
+array['frutas'] = Array('Banana', 'Morango', 'Maçã')
+array['pessoas'] = Array('Gabriel', 'Thiago', 'Valeri')
