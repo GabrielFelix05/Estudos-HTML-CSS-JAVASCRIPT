@@ -1,44 +1,79 @@
 body {
-    background-color: black;
+    background-color: #fafafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 0;
 }
 
-@keyframes container-ani {
-    0%   {
-        top: 0px;
-        left: 0px;
-        background-color: blue;
-    }
-    25%  {
-        top: 100px;
-        left: 25px;
-        background-color: yellow;
-    }
-    50%  {
-        top: 100px;
-        left: 50px;
-        background-color: green;
-    }
-    75%  {
-        top: 200px;
-        left: 75px;
-        background-color: red;
-    }
-    100% {
-        top: 100px;
-        left: 100px;
-        background-color: brown;
-    }
-}
-
-#container {
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-50px);
+    background-color: #fff;
     width: 300px;
     height: 300px;
-    position: relative;
-    /* animation-name: container-ani;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-iteration-count: 5;
-    animation-direction: alternate; */
-    animation: container-ani 3s 3s 10 alternate;
+    box-shadow: 1px 1px 10px 1px #BDBDBD;
+    border-radius: 5px;
+    padding: 0 30px;
 
+    animation-name: containerAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+@keyframes containerAnimation {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#container label {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+#container input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    background-color: #F2F2F2
+}
+#container button {
+    border: none;
+    background-color: #FFBF00;
+    color: #000;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#load {
+    margin: 20px 0;
+    border: 10px solid #FFBF00;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border-top-color: transparent;
+    animation: load .6s linear infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
 }
