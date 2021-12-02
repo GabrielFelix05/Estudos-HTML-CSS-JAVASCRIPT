@@ -1,8 +1,9 @@
 //Array
 
-const valores = [1, 2, 3, 4]
-valores.push(5, 6, 7, 8)
+const prod1 = {}
 
-console.log(valores.pop())
-delete valores[0]
-console.log(valores)
+prod1.name = "Gabriel"
+prod1.sobrenome = "Felix"
+prod1.idade = 23
+
+console.log(prod1)
