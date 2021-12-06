@@ -1,4 +1,11 @@
-function minhaSoma(a, b){
-    return a + b
+const nome = { 
+
 }
-console.log(minhaSoma(10, 20))
+
+nome.nome1 = "Gabriel"
+nome.nome3 = "Silvia"
+nome.nome4 = "Sandra"
+
+const {nome1, nome2} = nome
+
+console.log(nome1, nome2)
