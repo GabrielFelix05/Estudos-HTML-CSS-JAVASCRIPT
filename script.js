@@ -3,6 +3,7 @@ const nome = {
 }
 
 nome.nome1 = "Gabriel"
+nome.nome2 = "Thiago"
 nome.nome3 = "Silvia"
 nome.nome4 = "Sandra"
 
