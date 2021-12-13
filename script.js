@@ -1,15 +1,12 @@
-const array = new Array("gabriel", "Thiago", "Felix", "Silva")
+var array = []
+var array1 = [1, 2, 3, 4, 5, 6, 7, 8]
+var array2 = [9, 10, 11, 12, 13, 14, 15]
 
-//Inserindo mais um nome após o ultimo valor
-array.push('Jeniffer')
+array[0] = array1
+array[1] = array2
 
-//Inserindo mais um nome antes do primeito valor
-array.unshift('Aghata')
-
-//Deletando o ultimo valor
-array.pop()
-
-//Deletando o primeiro valor
-array.shift()
-
-console.log(array)
+for(i = 0; i < array.length; i++) {
+    for(x = 0; x < array[i].length; x++) {
+        console.log(array[i][x])
+    }
+}
