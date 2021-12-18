@@ -1,7 +1,4 @@
-let multiplicar = 0
-while(multiplicar <= 10) {
-    let valor = 2
-    let final = valor * multiplicar
-    console.log(`${valor} x ${multiplicar} = ${final}`)
-    multiplicar++
+for(i = 0; i <= 10; i++) {
+    let final = 3 * i
+    console.log(`i = ${i} = ${final}`)
 }
