@@ -1,42 +1,24 @@
-function Queue() {
-    var items = []
-
-    this.esqueue = function(element) {
-        //add um nome item
-        items.push(element)
+function soBoaNoticia(nota) {
+    if(nota >= 7) {
+        console.log('Aprovado com ', nota)
     }
-
-    this.dequeue = function() {
-        //remove o primeiro item
-        return items.shift()
+    else {
+        console.log('Reprovado com ', nota)
     }
-
-    this.front = function() {
-        //retorna o primeiro elemento da fila
-        return items[0]
-    }
-
-    this.isEmpty = function() {
-        //verifica se a fila está vazia ou não
-        return items.length === 0
-    }
-
-    this.size = function() {
-        //retorna o tamanho da fila
-        return items.length
-    }
-
-    this.print = function() {
-        //imprimir a fila no console
-        console.log(items.toString())
-    }  
 }
 
-var fila = new Queue()
+function soSeForVerdade(verdade) {
+    if(verdade) {
+        console.log('Isso é verdade!!')
+    }
+    else {
+        console.log('Isso é mentira!!')
+    }
+}
 
-fila.esqueue('Gabriel')
-fila.esqueue('Thiago')
-fila.esqueue('Anderson')
-fila.esqueue('Alex')
-
-console.log(fila.size())
+soSeForVerdade(null)
+soSeForVerdade(undefined)
+soSeForVerdade(NaN)
+soSeForVerdade('')
+soSeForVerdade(0)
+soSeForVerdade(1)
