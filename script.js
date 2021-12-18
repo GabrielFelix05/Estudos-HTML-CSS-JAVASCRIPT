@@ -1,45 +1,42 @@
-function Stack() {
-    var item = []
+function Queue() {
+    var items = []
 
-    this.push = function(element) {
-        item.push(element)
+    this.esqueue = function(element) {
+        //add um nome item
+        items.push(element)
     }
 
-    this.pop = function() {
-        return item.pop()
+    this.dequeue = function() {
+        //remove o primeiro item
+        return items.shift()
     }
 
-    this.peek = function() {
-        return item[item.length - 1]
+    this.front = function() {
+        //retorna o primeiro elemento da fila
+        return items[0]
     }
 
     this.isEmpty = function() {
-        return item.length === 0
+        //verifica se a fila está vazia ou não
+        return items.length === 0
     }
 
-   this.clear = function() {
-       item = []
-   }
-
     this.size = function() {
-        return item.length
+        //retorna o tamanho da fila
+        return items.length
     }
 
     this.print = function() {
-        console.log(item.toString())
-    }
+        //imprimir a fila no console
+        console.log(items.toString())
+    }  
 }
 
-const pilha = new Stack()
+var fila = new Queue()
 
-pilha.push( 'Gabriel ')
-pilha.push(' Thiago ')
-pilha.push(' Gustavo ')
-pilha.push(' Lucas ')
-pilha.push(' Danilo')
+fila.esqueue('Gabriel')
+fila.esqueue('Thiago')
+fila.esqueue('Anderson')
+fila.esqueue('Alex')
 
-pilha.print()
-
-pilha.clear()
-
-console.log(pilha.size())
+console.log(fila.size())
